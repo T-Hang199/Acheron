@@ -1,8 +1,8 @@
 function playPause(){
 
     document.getElementById('music').paused
-    ? document.getElementById('music').play()
-    : document.getElementById('music').pause()
+    ? document.getElementById('music').pause()
+    : document.getElementById('music').play()
 
     document.querySelector('.audio-wire-1').style.animationPlayState === "paused"
     ? document.querySelector('.audio-wire-1').style.animationPlayState = "running"
