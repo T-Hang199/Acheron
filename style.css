@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+video{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+}
+
+header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    color: #fff;
+    text-align: center;
+}
+
+header h1{
+    font-weight: 500;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+header span{
+    font-weight: 800;
+    font-size: 6rem;
+    display: block;
+}
+
+.description{
+    position: absolute;
+    bottom: 2%;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    opacity: 0.6;
+    padding: 1rem;
+}
+
+.container{
+    height: 50vh;
+    width: 100%;
+}
+
+#audio-visual{
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+#audio-visual .audio-wire{
+    height: 50%;
+    margin: 0px 3px;
+    padding: 0px 1px;
+    background-color: #fff;
+    animation: animateUpDown .4s infinite alternate;
+}
+
+#audio-visual .audio-wire-1{
+    animation-delay: 50ms;
+}
+#audio-visual .audio-wire-2{
+    animation-delay: 150ms;
+}
+#audio-visual .audio-wire-3{
+    animation-delay: 300ms;
+}
+#audio-visual .audio-wire-4{
+    animation-delay: 450ms;
+}
+#audio-visual .audio-wire-5{
+    animation-delay: 600ms;
+}
+#audio-visual .audio-wire-6{
+    animation-delay: 450ms;
+}
+#audio-visual .audio-wire-7{
+    animation-delay: 300ms;
+}
+#audio-visual .audio-wire-8{
+    animation-delay: 150ms;
+}
+#audio-visual .audio-wire-9{
+    animation-delay: 50ms;
+}
+
+@keyframes animateUpDown {
+    to{
+        height: 90%;
+    }
+    from{
+        height: 50%;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+  
+  header {
+    animation: fadeIn 2s ease-in-out;
+  }
+
+@media screen and (max-width: 1200px) {
+    .description{
+        position: absolute;
+        width: 91vw;
+        bottom: 0;
+        border-radius: 20px 20px 0 0;
+        margin: auto;
+        padding: 0.5rem 1rem;
+    }   
+}
+
+@media screen and (max-width: 720px) {
+    .description{
+        position: absolute;
+        width: 90vw;
+        bottom: 1%;
+        border-radius: 20px;
+        margin: auto;
+        padding: 0.5rem 1rem;
+    }
+}
